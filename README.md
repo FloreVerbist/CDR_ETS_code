@@ -27,9 +27,16 @@ Note that the main.jl file is written in a loop to solve over all integration de
 
 ## Requirements
 
-This code uses by default the [Gurobi](https://www.gurobi.com/academics) solver to optimise each MCP. Without a Gurobi license, one can also use free open-source solvers to solve the code.  
-To download the required packages, use: 
+This code uses by default the [Gurobi](https://www.gurobi.com/academics) solver (v13.0.0) to optimise each MCP. Without a Gurobi license, one can also use free open-source solvers to solve the code.  
+To download the required packages, the following lines are added in main.jl: 
 ```
 using Pkg 
 Pkg.activate("./Environment_CDR")
 ```
+The Julia version v1.11 has been used. 
+
+
+**Questions?** Feel free to contact *flore.verbist@kuleuven.be*
+
+
+
